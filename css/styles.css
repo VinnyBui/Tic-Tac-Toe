@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+  text-align: center;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+section{
+  flex:1;
+}
+
+input{
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input:focus{
+  outline: none;
+}
+
+.player_side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.gameboard {
+  flex:1.5;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 50px 0px;
+}
+
+.field {
+  border: 0.2rem solid black;
+}
+
+.field:nth-child(1), 
+.field:nth-child(2),
+.field:nth-child(3)
+{
+    border-top: 0;
+}
+
+.field:nth-child(7), 
+.field:nth-child(8),
+.field:nth-child(9)
+{
+    border-bottom: 0;
+}
+
+.field:nth-child(1), 
+.field:nth-child(4),
+.field:nth-child(7)
+{
+    border-left: 0;
+}
+
+.field:nth-child(3), 
+.field:nth-child(6),
+.field:nth-child(9)
+{
+    border-right: 0;
+}
